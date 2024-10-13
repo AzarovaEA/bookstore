@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<section class="flex flex-col login">
+    <div class="flex close-popup-btn-container">
+        <button class="close-popup-btn">&times;</button>
+    </div>
+    <form class="login-form">
+        <div class="login-form__form-item">
+            <div class="label">Логин</div>
+            <input name="login" type="text" placeholder="Логин">
+            <div class="error"></div>
+        </div>
+        <div class="login-form__form-item has-error">
+            <div class="label">Пароль</div>
+            <input name="password" type="password" placeholder="Пароль">
+            <div class="error">Некорректный логин или пароль</div>
+        </div>
+        <br/>
+        <div class="login-form__form-item">
+            <button class="btn-login" type="submit">Войти</button>
+        </div>
+    </form>
+
+    <div class="login-form__registration">
+        У вас нет аккаунта? <a href="registration.html">Зарегистрироваться</a>
+    </div>
+</section>
+</body>
+</html>

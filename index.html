@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="купить книгу, книги"/>
+    <title>Книжный магазин</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="flex between vertical-center header-content">
+            <a href="index.html" class="flex header__logo">
+                <p class="logo-title">БУКЛЯ</p>
+                <div class="circle"></div>
+            </a>
+
+            <form action="" method="get" class="flex header__search-form">
+                <input class="w-full" type="text" placeholder="Поиск">
+
+                <button type="submit" class="h-full header__search-btn">
+                    Найти
+                </button>
+            </form>
+
+            <nav>
+                <ul class="flex flex-row header__cart-container">
+                    <li class="header__cart">
+                        <a href="login.html"><img class="w-full" src="img/account.png" alt="1212"></a>
+                    </li>
+                    <li class="header__cart">
+                        <a href="bookmarks.html"><img class="w-full" src="img/bookmark_2.png" alt="1212"></a>
+                    </li>
+                    <li class="header__cart">
+                        <a href="cart.html" class="item_circle">
+                            <img class="w-full" src="img/unnamed.png" alt="1212">
+                            <span class="circle-notification"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <h1 class="search-results__title">Результаты поиска: <span id="search-query">властелин колец</span></h1>
+
+        <section class="flex main-information">
+            <aside class="flex flex-col aside">
+                <div class="aside__icon-btn-filter-container">
+                    <button class="flex aside__icon-btn-filter" id="aside__icon-btn-filter">
+                        <img class="w-full" src="img/filter-1024.webp"
+                             alt="Icon filters"/>
+                    </button>
+                </div>
+                <form action="#" id="aside__filter">
+                    <div class="price-category">
+                        <div class="filter-legend">Цена</div>
+                        <div class="flex flex-start between price-filter">
+                            <div class="flex flex-row ">
+                                <div class="title">От</div>
+                                <input type="number" min="1" max="99000" id="price_from" name="price" placeholder="0">
+                            </div>
+
+                            <div class="flex flex-row">
+                                <div class="title">До</div>
+                                <input type="number" min="1" max="99000" id="price_to" name="price" placeholder="20000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aside__category">
+                        <div class="filter-legend">Автор</div>
+                        <input type="text" id="author" name="author" placeholder="Поиск">
+                    </div>
+
+                    <div class="aside__category">
+                        <div class="filter-legend">Издательство</div>
+                        <input type="text" id="publishing" name="publishing" placeholder="Поиск">
+                    </div>
+
+                    <div class="aside__btn-filter-container">
+                        <button class="w-full aside__btn-filter">Применить</button>
+                    </div>
+                </form>
+            </aside>
+
+            <div class="flex flex-col">
+                <div class="flex flex-start products" id="products">
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full" src="img/books/orig_2.webp"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">394 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец. Хранители кольца</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 970 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/orig_3.webp"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 196 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин Колец. Возвращение короля</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/book_4.jpg"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">374 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец. Две твердыни</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 508 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Секреты Средиземья.
+                                    Как появилась культовая вселенная Властелина колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a class="h-full" href="#">Ролан Леук,
+                                    Лоик Манжен,
+                                    Жан-Себастьян Штейер</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 970 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 970 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 970 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/lord_rings.png"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 970 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин колец</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__container">
+                            <div class="product-card__img-container">
+                                <a class="flex w-full h-full" href="description.html">
+                                    <img class="w-full"
+                                         src="img/books/orig_3.webp"
+                                         alt="Image of the house"/>
+                                </a>
+
+                                <button class="product-card__btn-bookmark">
+                                    <img src="img/bookmark_2.png" class="bookmark-icon" alt="Bookmark_icon">
+                                </button>
+                            </div>
+
+                            <div class="flex-row product-card__price">
+                                <span class="amount">1 196 <span class="currency">₽</span></span>
+                            </div>
+
+                            <div class="hidden product-card__title">
+                                <a class="h-full" href="description.html">Властелин Колец. Возвращение короля</a>
+                            </div>
+
+                            <div class="hidden product-card__author">
+                                <a href="#">Джон Рональд Руэд Толкин</a>
+                            </div>
+
+                            <div class="product-card__btn-container">
+                                <button class="w-full product-card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-more">
+                    <button class="items-more__btn">Показать ещё</button>
+                </div>
+            </div>
+        </section>
+
+        <!--        <hr class="additional-information__hr">-->
+
+        <section class="additional-information">
+            <p class="additional-information__text">Увлекательные книги зарубежных и российских писателей предлагает
+                любителям хорошей литературы онлайн магазин БУКЛЯ. На нашем сайте вы найдете большой выбор произведений
+                разных жанров. Выберите в перечне издание любимого автора, и вы окунетесь в удивительный мир приключений
+                и романтики.
+            </p>
+            <h2 class="additional-information__title">Как выбрать хорошую книгу?</h2>
+            <p class="additional-information__text">Подобрать для себя по-настоящему увлекательную книгу непросто.
+                Даже самый увлеченный читатель не
+                может знать обо всех российских и иностранных авторах. Тем более что каждый год появляются новые
+                творцы, предлагающие на суд любителей литературы свои произведения. Но все же есть несколько
+                параметров, по которым можно подобрать для себя издание.
+            </p>
+
+            <ul class="additional-information__text-list">
+                <li>
+                    Определитесь с жанром.
+                </li>
+                <li>
+                    Изучите рецензии критиков и обычных читателей.
+                </li>
+                <li>
+                    Прочтите отрывки из произведения, которые дадут представление о книге и стиле изложения
+                    писателя.
+                </li>
+                <li>
+                    Изучите рейтинги произведений любимого жанра.
+                </li>
+                <li>
+                    Попросите друзей или знакомых посоветовать вам литературу.
+                </li>
+            </ul>
+
+            <p class="additional-information__text">После подбора у вас, скорее всего, будет список из нескольких
+                произведений, которые покажутся вам
+                увлекательными. Выберите любое из них и совершите покупку, оформив заказ в нашем магазине.</p>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <hr>
+    <div class="container">
+        <div class=" flex flex-row footer-information">
+            <div class="flex flex-col footer__href">
+                <a href="cart.html">Корзина</a>
+                <a href="#">Избранное</a>
+            </div>
+
+            <div class="flex flex-col footer__href">
+                <a href="https://t.me/blond_kot">Телеграм канал</a>
+                <a href="https://vk.com/b_londinka">Группа в вк</a>
+            </div>
+
+            <div class="footer__copyright">
+                ©2024 Букля
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="script/index.js">
+
+</script>
+</html>

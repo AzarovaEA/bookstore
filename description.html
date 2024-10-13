@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="купить книгу, книги"/>
+    <title>Властелин колец</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="flex between vertical-center header-content">
+            <a href="index.html" class="flex header__logo">
+                <p class="logo-title">БУКЛЯ</p>
+                <div class="circle"></div>
+            </a>
+
+            <form action="" method="get" class="flex header__search-form">
+                <input class="w-full" type="text" placeholder="Поиск">
+
+                <button type="submit" class="h-full header__search-btn">
+                    Найти
+                </button>
+            </form>
+
+            <nav>
+                <ul class="flex flex-row header__cart-container">
+                    <li class="header__cart">
+                        <a href="login.html"><img class="w-full" src="img/account.png" alt="1212"></a>
+                    </li>
+                    <li class="header__cart">
+                        <a href="bookmarks.html"><img class="w-full" src="img/bookmark_2.png" alt="1212"></a>
+                    </li>
+                    <li class="header__cart">
+                        <a href="cart.html" class="item_circle">
+                            <img class="w-full" src="img/unnamed.png" alt="1212">
+                            <span class="circle-notification"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="flex flex-col container">
+        <section class="flex main-description">
+            <div class="flex description__img-spec">
+                <div class="flex description__img-container">
+                    <img src="img/books/book_5.webp" alt="book cover">
+                </div>
+            </div>
+            <div class="description__product-specif">
+                <div class="description__product-title">
+                    Властелин колец. Хранители кольца. Две твердыни. Возвращение короля
+                </div>
+
+                <div class="description__product-author">
+                    Джон Рональд Руэд Толкин
+                </div>
+
+                <div class="">
+                    <div class="flex-row description__product-price">
+                        <span class="amount">1 062 <span class="currency">₽</span></span>
+                    </div>
+
+                    <div class="flex flex-row description__btn-container">
+                        <button class="w-full description__btn">В корзину</button>
+
+                        <button class="description__btn-bookmark">
+                            <img src="img/bookmark_2.png" class="bookmark-icon"  alt="Bookmark_icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex-row specifications">
+            <div>
+                <p class="specifications__title">Описание</p>
+                <p>Перед вами трилогия "Властелин Колец". Своеобразная "Библия от фэнтези". Книга Книг XX века. Самое
+                    популярное, самое читаемое, самое культовое произведение ушедшего столетия. Не легенда литературы,
+                    но миф!</p>
+            </div>
+            <ul> <p class="specifications__title">Характеристики</p>
+                <li>
+                    <span class="property-name">Серия: </span>Мастера фэнтези
+                </li>
+                <li>
+                    <span class="property-name">Формат:</span> 15x15
+                </li>
+                <li>
+                    <span class="property-name">Количество страниц: </span>
+                    1150
+                </li>
+                <li>
+                    <span class="property-name">Направление: </span>
+                    Фэнтези
+                </li>
+                <li>
+                    <span class="property-name">Ширина, мм:</span>
+                    210
+                </li>
+                <li>
+                    <span class="property-name">Высота, мм: </span>
+                    140
+                </li>
+            </ul>
+        </section>
+
+        <section class="additional-information">
+            <p class="additional-information__text">Увлекательные книги зарубежных и российских писателей предлагает
+                любителям хорошей литературы онлайн магазин БУКЛЯ. На нашем сайте вы найдете большой выбор произведений
+                разных жанров. Выберите в перечне издание любимого автора, и вы окунетесь в удивительный мир приключений
+                и романтики.
+            </p>
+            <h2 class="additional-information__title">Как выбрать хорошую книгу?</h2>
+            <p class="additional-information__text">Подобрать для себя по-настоящему увлекательную книгу непросто.
+                Даже самый увлеченный читатель не
+                может знать обо всех российских и иностранных авторах. Тем более что каждый год появляются новые
+                творцы, предлагающие на суд любителей литературы свои произведения. Но все же есть несколько
+                параметров, по которым можно подобрать для себя издание.
+            </p>
+
+            <ul class="additional-information__text-list">
+                <li>
+                    Определитесь с жанром.
+                </li>
+                <li>
+                    Изучите рецензии критиков и обычных читателей.
+                </li>
+                <li>
+                    Прочтите отрывки из произведения, которые дадут представление о книге и стиле изложения
+                    писателя.
+                </li>
+                <li>
+                    Изучите рейтинги произведений любимого жанра.
+                </li>
+                <li>
+                    Попросите друзей или знакомых посоветовать вам литературу.
+                </li>
+            </ul>
+
+            <p class="additional-information__text">После подбора у вас, скорее всего, будет список из нескольких
+                произведений, которые покажутся вам
+                увлекательными. Выберите любое из них и совершите покупку, оформив заказ в нашем магазине.</p>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <hr>
+    <div class="container">
+        <div class=" flex flex-row footer-information">
+            <div class="flex flex-col footer__href">
+                <a href="cart.html">Корзина</a>
+                <a href="#">Избранное</a>
+            </div>
+
+            <div class="flex flex-col footer__href">
+                <a href="https://vk.com/sadblx">Телеграм канал</a>
+                <a href="https://vk.com/sadblx">Группа в вк</a>
+            </div>
+
+            <div class="footer__copyright">
+                ©2024 Букля
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="script/description.js"></script>
+</html>
